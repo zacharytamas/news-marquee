@@ -1,0 +1,56 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../polymer/lib/elements/dom-if.html">
+
+<dom-module id="marquee-item">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+        color: rgba(0, 0, 0, .75);
+        padding: 12px 0;
+        vertical-align: middle;
+        margin-right: 2em;
+      }
+    </style>
+
+    <template is="dom-if" if="[[href]]">
+      <a href$="[[href]]">[[text]]</a>
+    </template>
+
+    <template is="dom-if" if="[[!href]]">
+      [[text]]
+    </template>
+
+  </template>
+
+  <script>
+    /**
+     * `marquee-item`
+     * An individual item in a `news-marquee`.
+     *
+     * You can make your own elements to be in your `news-marquee`,
+     * this is just a sample one.
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MarqueeItem extends Polymer.Element {
+      static get is() { return 'marquee-item'; }
+      static get properties() {
+        return {
+          href: {
+            type: String,
+            value: ""
+          },
+
+          text: {
+            type: String
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MarqueeItem.is, MarqueeItem);
+  </script>
+</dom-module>

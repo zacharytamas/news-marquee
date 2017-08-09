@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>news-marquee demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../news-marquee.html">
+    <link rel="import" href="../marquee-item.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic news-marquee demo</h3>
+      <demo-snippet>
+        <template>
+          <news-marquee>
+            <marquee-item text="Polymer Summit 2017 dates announced, will be in Copenhagen"></marquee-item>
+            <marquee-item text="New WebComponents directory website released" href="https://webcomponents.org"></marquee-item>
+            <marquee-item text="#UseThePlatform"></marquee-item>
+          </news-marquee>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,7 @@
 # \<news-marquee\>
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+
 A Polymer element for a scrolling marquee, as common on news websites.
 
 ## Install the Polymer-CLI

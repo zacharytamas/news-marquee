@@ -31,5 +31,43 @@
         </template>
       </demo-snippet>
     </div>
+
+    <div class="vertical-section-container centered">
+      <h3>news-marquee with styles applied</h3>
+      <demo-snippet>
+        <template>
+        <style is="custom-style">
+          news-marquee.custom {
+            --marquee-background: cyan;
+          }
+        </style>
+
+          <news-marquee class="custom">
+            <marquee-item text="Polymer Summit 2017 dates announced, will be in Copenhagen"></marquee-item>
+            <marquee-item text="New WebComponents directory website released" href="https://webcomponents.org"></marquee-item>
+            <marquee-item text="#UseThePlatform"></marquee-item>
+          </news-marquee>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container centered">
+      <h3>With other elements</h3>
+      <demo-snippet>
+        <template>
+          <!--
+            The contents of the marquee do not have to be `marquee-item`s.
+            They can be anything that is displayed inline or as inline-block.
+          -->
+
+          <news-marquee>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <span>Second item</span>
+            <span>Third item</span>
+          </news-marquee>
+        </template>
+      </demo-snippet>
+    </div>
+
   </body>
 </html>

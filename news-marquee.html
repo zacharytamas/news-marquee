@@ -13,8 +13,7 @@
       }
 
       .marquee {
-        background-image: -o-linear-gradient(309deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);
-        background-image: linear-gradient(141deg,#ffaf24 0,#ffdd57 71%,#fffa70 100%);
+        background: var(--marquee-background, white);
       }
 
       .ticker {
@@ -48,6 +47,10 @@
     /**
      * `news-marquee`
      * A Polymer element for a scrolling marquee, as common on news websites.
+     *
+     * Custom property | Description | Default
+     * ----------------|-------------|---------
+     * `--marquee-background` | Variable which defines the background of the marquee | `white`
      *
      * @customElement
      * @polymer
